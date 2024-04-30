@@ -13,7 +13,7 @@ st.sidebar.markdown("# Home 🎈")
 
 #logo = Image.open("./project_dashboard/heatmap.jpg")
 
-logo = Image.open("medsync_logo.png")
+logo = Image.open("./project_dashboard/medsync_logo.png")
 
 
 st.subheader("Streamlining Inventory Management for Storable Healthcare Products in a Unified Demand Environment")
