@@ -96,7 +96,7 @@ st.subheader("Our approach: Problem Statement")
 
 st.write("Determining cost-optimality while meeting environmental and robustness criteria is hence the aim. To address the issue, we propose a unified demand approach, which entails an agreement among various healthcare facilities to pool their demand for medical supplies into a single order in an effort to cut costs. This order is then based on a mathematical model, which is then further implemented to solve the problem in this particular setting. To keep things simple, we take a month-level granularity of time.")
 st.write("---")
-st.subheader("Proposed SOlution")
+st.subheader("Proposed Solution")
 st.write("Assuming the referenced economic benefits, we assume in the unified demand scenario that all hospitals combine their orders for a certain product into a single order. As a result, we take into account every product independently and create a model to optimize the procedures for every product.")
 st.write("We take into consideration a distinct supplier and distribution hub for a certain product (because we are in a specific area, we can presume a specific location). Optimising costs while maintaining a specific environmental footprint and resilience score is our task. We express the environmental impact in terms of the number of orders, as stated in the problem specification and the references. This is essentially deciding when and how much to order given a certain number of orders, a robust level of demand satisfaction, and storage costs.")
 st.write("A forecast for the purchase plan provides us with the demand, from which we calculate the number of units required for the upcoming year.")
