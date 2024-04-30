@@ -1,0 +1,13 @@
+Data,Datatype,Description
+P_code,Object,Product code (the first letter relates to product classification). Unique identifier of a product
+P_date,Date,Purchase date (day/month/year)
+N_Order,Object,Order number/year
+R_no,Object,Reference number
+N_product_purchased,Numeric,Number of products purchased
+N_units,Numeric,Number of units that the product contains
+Cost,Numeric,Cost in €
+Total_product_purchase,Numeric,Total cost of products purchase
+Type_purchase,Object,Type of public purchase (Minor purchase: minor contract / Major purchase: public tender)
+H_code,Object,Code corresponding to the purchasing region-hospital-department (anonymized data)
+Type_logistic,Object,Type of logistic distribution of products (TRANSIT: directly delivered at the hospital /STORABLE: delivered at purchase center)
+PRODUCTO,Object,Product description
