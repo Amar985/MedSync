@@ -72,7 +72,7 @@ st.download_button(label="Dowload Paper",
                     file_name="Medsync_Paper_Final_Phase.pdf",
                     mime='application/octet-stream')
 
-with open("./project_dashboard/Medsync_ppt.pdf", "rb") as pdf_file:
+with open("./project_dashboard/MedSync_ppt.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 st.download_button(label="Dowload PPT",
