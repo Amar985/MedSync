@@ -69,7 +69,7 @@ with open("DSN4096 Capstone Project Medsync.pdf", "rb") as pdf_file:
 
 st.download_button(label="Dowload Paper",
                     data=PDFbyte,
-                    file_name="Medsync_Paper_Final_Phase.pdf",
+                    file_name="./project_dashboard/Medsync_Paper_Final_Phase.pdf",
                     mime='application/octet-stream')
 
 with open("Medsync ppt.pdf", "rb") as pdf_file:
@@ -77,7 +77,7 @@ with open("Medsync ppt.pdf", "rb") as pdf_file:
 
 st.download_button(label="Dowload PPT",
                     data=PDFbyte,
-                    file_name="Medsync_PPt.pdf",
+                    file_name="./project_dashboard/Medsync_PPt.pdf",
                     mime='application/octet-stream')
 
 
@@ -114,7 +114,7 @@ st.markdown("# Unified demand model 🌐")
 st.sidebar.markdown("# Unified demand model 🌐")
 
 
-video_file = open('animation0.mp4', 'rb')
+video_file = open('./project_dashboard/animation0.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.write("Simulation of the flow of products between providers and a central storage center that supplies all hospitals in a region:")
@@ -145,7 +145,7 @@ st.code(code, language='python')
 st.markdown("# Data 📊")
 st.sidebar.markdown("# Data 📊")
 # Load your CSV data
-csv_data = pd.read_csv("consumo_material_clean.csv")
+csv_data = pd.read_csv("./project_dashboard/consumo_material_clean.csv")
 
 # Display the DataFrame
 st.write("CSV Data: consumo_material_clean")
@@ -153,7 +153,7 @@ st.dataframe(csv_data)
 
 st.markdown("# Dataset Overview 🕹️")
 st.sidebar.markdown("# Dataset Overview 🕹️")
-csv_data = pd.read_csv("Dataset_Overview.csv", encoding='latin1')
+csv_data = pd.read_csv("./project_dashboard/Dataset_Overview.csv", encoding='latin1')
 
 # Display the DataFrame
 st.write("### Dataset Overview")
@@ -169,10 +169,10 @@ st.write('Parameters of optimization:')
 st.write('', r'$\beta$', ' - Resilience factor, factor by which we multiply demand to increase supply chainresilience.')
 st.write('', r'$P_{max}$', ' - Number of orders ∝ CO2 emissions,a proxy for environmental impact.')
 st.write('We have used different values for', r'$\beta$', ' and ', r'$P_{max}$',' to observe the effects of different environmental and robustness restrictions on the optimal cost of storage.')
-heatmap = Image.open("heatmap.jpg")
+heatmap = Image.open("./project_dashboard/heatmap.jpg")
 st.image(heatmap, use_column_width=True)
 st.caption("Heatmap of optimal costs in terms of "+r'$\beta$'+" and "+ r'$P_{max}$'+" for product 70130 (APÓSITO DE HIDROCOLOIDE-7)")
 st.write(' As expected, the more robust and the fewer orders allowed (i.e. the less environmental impact) lead to increased optimal costs. We also observe that it is significantly harder to have a lesser environmental impact than to be more robust.')
 st.write(' You should obtain the following results (as reported in the report): ')
-Model_result = Image.open("Model result.png")
+Model_result = Image.open("./project_dashboard/Model result.png")
 st.image(Model_result, use_column_width=True)
