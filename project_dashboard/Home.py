@@ -69,7 +69,7 @@ with open("DSN4096_Capstone_Project_Medsync.pdf", "rb") as pdf_file:
 
 st.download_button(label="Dowload Paper",
                     data=PDFbyte,
-                    file_name="./project_dashboard/Medsync_Paper_Final_Phase.pdf",
+                    file_name="Medsync_Paper_Final_Phase.pdf",
                     mime='application/octet-stream')
 
 with open("Medsync_ppt.pdf", "rb") as pdf_file:
@@ -77,7 +77,7 @@ with open("Medsync_ppt.pdf", "rb") as pdf_file:
 
 st.download_button(label="Dowload PPT",
                     data=PDFbyte,
-                    file_name="./project_dashboard/Medsync_PPt.pdf",
+                    file_name="Medsync_PPt.pdf",
                     mime='application/octet-stream')
 
 
